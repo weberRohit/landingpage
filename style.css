@@ -1,0 +1,216 @@
+@font-face {
+    font-family:poppins;
+    src: url('../CLONE WEBSITE 2/P_fonts/PF.ttf ');
+    font-family: roboto;
+    src: url('../CLONE WEBSITE 2/R_font/Roboto-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+:root{
+    --button-color:#ff671b;
+    --background-color-dark:#f5f2e1;
+    --padding-inline-section:20px;
+}
+body{
+    font-family:'roboto',sans-serif;
+    color: var(--primary-text-color);
+    background-color:var(--background-color-dark);
+}
+h1{
+    font-size: 4rem;
+}
+
+p{
+    font-family: 'roboto',sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ 
+ul{
+    list-style: none;
+}
+
+
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.container{
+    max-width: 1080px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.hover-link{
+    color: #000;
+}
+.hover-link:hover{
+    color: var(--button-color);
+    transition: 0.2s ease-out;
+}
+
+.primary-button{
+    color: #ffffff !important;
+    background-color: var(--button-color);
+    padding: 12px 24px;
+    border-radius: 6px;
+    transition: 0.2s ease-out;
+    text-align: center;
+    cursor: pointer;
+}
+
+.primary-button:hover{
+    background-color: #f47536;
+}
+
+.top-banner{
+    background-image: url('./assests/asset\ 32.png');
+    background-size: 300px;
+    background-color: #ff671bae;
+}
+
+.banner-text{
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center;
+}
+ 
+         /* navbar  */
+
+.main-nav{
+    margin-top: 20px;
+    justify-content: space-between;
+    position: relative;
+}         
+
+.club-logo img{
+    width: 100%;
+    height: 100px;
+    border-radius: 50%;
+} 
+
+.nav-links{
+    flex-basis: 730px;
+}
+.nav-links ul{
+    justify-content: end;
+    gap:40px;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+/* header section  */
+
+header{
+    padding: 50px var(--padding-inline-section) 0; 
+}
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+.header-left{
+    max-width: 40vw;
+}
+
+.header-left h1{
+    margin-top: 20px;
+}
+
+.get-started-btn{
+    margin-top: 20px;
+}
+
+.header-right img{
+    width: 100%;
+}
+
+/* image list   */
+
+.pictures-header{
+    text-align: center;
+    margin-block: 30px;
+    color: var(--primary-text-color);
+}
+
+.logos{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.logo{
+    height: 100px;
+    border-radius: 10px;
+    
+}
+
+
+/* examples section  */
+
+
+.examples-header{
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.examples-area{
+     justify-content: space-between;
+     margin-block: 30px;
+     flex-wrap: wrap;
+}
+
+.examples-card{
+    width: 23%;
+    position: relative;
+    height: 300px;
+    background: #000;
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url('./img/bg1.png');
+    background-size: cover;   
+    transition: 0.2s ease-out;
+    transform: scale(1);
+    border-radius: 1rem;
+}
+.examples-card:hover{
+    transform: scale(1.1);
+    object-fit: cover;
+    box-shadow: 0 0 10px #888;
+}
+
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: #fff !important;
+}
+
+.examples-card:nth-child(2){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url('./img/bg3.png');
+    background-size: cover;
+}
+.examples-card:nth-child(3){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url('./img/bg2.png');
+    background-size: cover;
+}
+.examples-card:nth-child(4){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url('./img/bg5.png');
+    background-size: cover;
+}
